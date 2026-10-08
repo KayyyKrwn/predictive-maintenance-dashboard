@@ -1,0 +1,68 @@
+{
+  "n_rows": 10000,
+  "n_failures": 339,
+  "failure_rate": 0.0339,
+  "mode_counts": {
+    "TWF": 46,
+    "HDF": 115,
+    "PWF": 95,
+    "OSF": 98,
+    "RNF": 19
+  },
+  "mode_names": {
+    "TWF": "Tool Wear Failure",
+    "HDF": "Heat Dissipation Failure",
+    "PWF": "Power Failure",
+    "OSF": "Overstrain Failure",
+    "RNF": "Random Failure"
+  },
+  "failure_rate_by_type": {
+    "H": 0.0209,
+    "L": 0.0392,
+    "M": 0.0277
+  },
+  "failures_by_type": {
+    "H": 21,
+    "L": 235,
+    "M": 83
+  },
+  "feature_ranges": {
+    "Air_temperature_K": [
+      295.3,
+      304.5
+    ],
+    "Process_temperature_K": [
+      305.7,
+      313.8
+    ],
+    "Rotational_speed_rpm": [
+      1168.0,
+      2886.0
+    ],
+    "Torque_Nm": [
+      3.8,
+      76.6
+    ],
+    "Tool_wear_min": [
+      0.0,
+      253.0
+    ],
+    "Temp_diff_K": [
+      7.6,
+      12.1
+    ],
+    "Power_W": [
+      1148.44,
+      10469.92
+    ]
+  },
+  "feature_medians": {
+    "Air_temperature_K": 300.1,
+    "Process_temperature_K": 310.1,
+    "Rotational_speed_rpm": 1503.0,
+    "Torque_Nm": 40.1,
+    "Tool_wear_min": 108.0,
+    "Temp_diff_K": 9.8,
+    "Power_W": 6271.03
+  }
+}

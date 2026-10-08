@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Model binaries (reproducible via scripts/train_model.py)
+*.pkl
+
+# Streamlit / OS
+.streamlit/
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+/tmp/

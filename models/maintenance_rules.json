@@ -1,0 +1,26 @@
+{
+  "tool_wear_limits": {
+    "L": {
+      "min_twf_wear": 200.0,
+      "replace_before_min": 180.0
+    },
+    "M": {
+      "min_twf_wear": 198.0,
+      "replace_before_min": 178.2
+    },
+    "H": {
+      "min_twf_wear": 206.0,
+      "replace_before_min": 185.4
+    }
+  },
+  "hdf_temp_diff_threshold": 7.8,
+  "osf_strain_proxy_threshold": 11093.0,
+  "pwf_power_low": 9699.5,
+  "pwf_power_high": 2762.5,
+  "notes": {
+    "TWF": "Ganti pahat sebelum mencapai 90% dari keausan minimum yang pernah menyebabkan TWF.",
+    "HDF": "Periksa sistem pendingin bila selisih suhu proses-udara di atas threshold.",
+    "PWF": "Periksa pasokan daya bila power di luar rentang normal.",
+    "OSF": "Kurangi beban bila kombinasi torsi x keausan pahat tinggi."
+  }
+}
