@@ -25,10 +25,19 @@ milling berbasis **dataset AI4I 2020** (Kaggle, CC BY-NC-SA 4.0).
 - Aturan perawatan diturunkan dari data (mis. ganti pahat tipe L
   sebelum 180 menit keausan).
 
+## Dataset
+
+Download `ai4i2020.csv` dari [Predictive Maintenance Dataset (AI4I 2020)](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020)
+(gratis, perlu akun Kaggle) dan simpan sebagai `data/ai4i2020.csv`.
+
 ## Cara menjalankan
 
 ```bash
-cd ~/workspace/predictive-maintenance-dashboard
+# 1. (sekali saja) siapkan environment & latih model
+python -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python scripts/train_model.py
+
+# 2. jalankan dashboard
 .venv/bin/python -m streamlit run app.py
 ```
 

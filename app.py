@@ -120,6 +120,23 @@ def rule_warnings(row: dict, rules: dict):
 # ============================== UI ==============================
 st.set_page_config(page_title="Predictive Maintenance Dashboard",
                    page_icon="🏭", layout="wide")
+
+# Friendly setup check for fresh clones (data & model are not committed)
+_missing = []
+if not (BASE / "data" / "ai4i2020.csv").exists():
+    _missing.append("**data/ai4i2020.csv** — download dari "
+                    "[AI4I 2020 di Kaggle](https://www.kaggle.com/datasets/stephanmatzka/"
+                    "predictive-maintenance-dataset-ai4i-2020) lalu simpan di folder `data/`")
+if not (BASE / "models" / "pipeline.pkl").exists():
+    _missing.append("**models/pipeline.pkl** — jalankan `.venv/bin/python scripts/train_model.py` "
+                    "untuk melatih model (butuh file CSV di atas)")
+if _missing:
+    st.title("🏭 Smart Manufacturing — Predictive Maintenance Dashboard")
+    st.warning("Setup belum lengkap. Lengkapi dulu:")
+    for m in _missing:
+        st.write("- " + m)
+    st.stop()
+
 pipe, eda, metrics, fi, rules = load_artifacts()
 df = load_data()
 
