@@ -258,7 +258,7 @@ with tab2:
                    "bar": {"color": color},
                    "steps": [{"range": [0, 25], "color": "#e8f5e9"},
                              {"range": [25, 60], "color": "#fff3e0"},
-                             {"range": [60, 100], "color": "#ffebee"}},
+                             {"range": [60, 100], "color": "#ffebee"}],
                    "threshold": {"line": {"color": "black", "width": 3},
                                  "value": 60}}))
         fig.update_layout(height=300)
